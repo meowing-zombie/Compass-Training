@@ -4,6 +4,7 @@
 \geometry{left=1.25in,right=1.25in, top=1in,bottom=1in}
 
 \usepackage{graphicx}
+\usepackage{listings}
 
 
 \title{Report for Topic 2}
@@ -14,5 +15,11 @@
 	\maketitle
 	\section{Customize Linux kernel}
 	\subsection{CLone the source code}
-	Clone the source code of Linux kernel from the publicly available repo and find the specific kernel version of Ubuntu you installed in Topic 1.
+	\textbf{Task:} Clone the source code of Linux kernel from the publicly available repo and find the specific kernel version of Ubuntu you installed in Topic 1.
+	\begin{lstlisting}[language=bash]
+		#Check the version of kernel
+		uname -r
+		#Clone the source code with specific version tag
+		git clone --branch v4.15 https://github.com/torvalds/linux.git
+	\end{lstlisting}
 \end{document} 
